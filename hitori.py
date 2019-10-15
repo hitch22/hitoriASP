@@ -14,16 +14,13 @@ To sovle a Hitori puzzle with the program, supply numbers to the input boxes and
 Then, click on solve button to solve the puzzle. Reset button can be used to clear the input box grid. 
 The program will display a message box if no answer can be found.
 
-The program will not work and display the error messages with no solutions if required dependencies are not met or not installed.
-
+The program will not work and display the error messages with no solutions if the required dependencies are not met or not installed.
 """
 
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLayout, QMessageBox, QGridLayout, QLineEdit, QMainWindow, QPushButton
 from PyQt5.QtCore import QSize, pyqtSlot, pyqtSignal, QRegExp
 from PyQt5.QtGui import QRegExpValidator
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
 import sys
 import os
 from collections import *
@@ -55,21 +52,21 @@ class MainWindow(QWidget):
         
         self.setLayout(grid)
         self.setWindowTitle("Hitori Solver")
-                 
+        
         # create a 5x5 2D array of QLineEdit objects
         self.cell2D = [[QLineEdit(self) for j in range(5)] for i in range(5)]
-              
+        
         for i in range(5):
             for j in range (5):
                 self.cell2D[i][j].setFixedWidth(100)
                 self.cell2D[i][j].setFixedHeight(100)
-                self.cell2D[i][j].setAlignment(Qt.AlignCenter)
+                self.cell2D[i][j].setAlignment(QtCore.Qt.AlignCenter)
                                 
                 # QLabels with coordinates for easier debugging
                 # grid.addWidget(QLabel("("+str(i)+" , "+str(j)+")") , i,j)
 
                 # add QLineEdit obj to the grid
-                grid.addWidget(self.cell2D[i][j] , i,j, alignment = Qt.AlignLeft )
+                grid.addWidget(self.cell2D[i][j] , i,j, alignment = QtCore.Qt.AlignLeft )
                 
                 # validate user input values. marshall them to be a single digit number btw 0 and 9
                 regex=QRegExp("[0-9]")
@@ -269,6 +266,7 @@ class MainWindow(QWidget):
 
         with open(target, "r") as file:
             for line in file:
+                # if no answer the first line with start with : 
                 if(line[0] != ':' and line[0] != '*'):
                     listBLK.append(black(line[6],line[8]))
                 
