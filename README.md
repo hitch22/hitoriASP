@@ -1,8 +1,9 @@
 Author: Jaesub Shim  
-Email:jashim@ttu.edu
-Date: 5 July, 2019
-Version: 0.1
-Requried: clingo, mkatoms, PyQt5
+Email:jashim@ttu.edu  
+Date: 5 July, 2019  
+Version: 0.1  
+Requried: clingo, mkatoms, PyQt5  
+
 Description: 
 
 This program solves Hitori Puzzle using Anser Set Programming. It uses PyQt5 for UI to let user input numbers, 
