@@ -6,7 +6,7 @@ Requried: clingo, mkatoms, PyQt5
 
 Description: 
 
-This program solves Hitori Puzzle using Anser Set Programming. It uses PyQt5 for UI to let user input numbers, 
+This program solves Hitori Puzzle using Answer Set Programming. It uses PyQt5 for UI to let user input numbers, 
 and it passes on the user input along with ASP logic file onto ASP solver through system call to get the puzzle solution, 
 which is displayed on GUI. It requires dependencies, such as clingo, mkatoms, and PyQt5, and has been tested to work on Ubuntu Linux 14.04. 
 The GUI is built using PyQt5 and styling used is "Fusion", which may or may not display correctly in other systems.
