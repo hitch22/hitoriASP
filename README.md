@@ -15,6 +15,6 @@ To sovle a Hitori puzzle with the program, supply numbers to the input boxes and
 Then, click on solve button to solve the puzzle. Reset button can be used to clear the input box grid. 
 The program will display a message box if no answer can be found.
 
-The program will not work and display the error messages with no solutions if required dependencies are not met or not installed.
+The program will not work and display the error messages with no solutions if required dependencies are not met or not installed. The ASP business logic is in *.lp extension.
 
 ![Screenshot](screenshot.jpg)
