@@ -16,4 +16,13 @@ The program will display a message box if no answer can be found.
 
 The program will not work and display the error messages with no solutions if required dependencies are not met or not installed. The ASP business logic is in *.lp extension.
 
+The following are the rules for the puzzle from https://www.conceptispuzzles.com/index.aspx?uri=puzzle/hitori/rules:
+
+Each puzzle consists of a square grid with numbers appearing in all squares. The object is to shade squares so:
+
+- No number appears in a row or column more than once.
+- Shaded (black) squares do not touch each other vertically or horizontally.
+- When completed, all un-shaded (white) squares create a single continuous area.
+
+
 ![Screenshot](screenshot.jpg)
